@@ -1,0 +1,133 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container{
+  background-image:url('/bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+.input{
+  width: 70%;
+  background-image: linear-gradient(45deg, #2B88FF,#fff,#87CEEB);
+  border-radius: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  box-shadow: 0 0 10px #FF996D;
+  transition-duration: 3s;
+  transition-delay: 2s;
+}
+.input label{
+  display: block;
+  margin-top: 14px;
+  font-family: Verdana,Times New Roman,Tahoma,Sans-Serif
+  font-size: 30px;
+  margin-left: 13%;
+}
+.input input{
+  max-width: 75%;
+  border: none ;
+  background: linear-gradient( #2B88FF,#87CEEB);
+  color: #fff;
+  border-radius: 5px;
+  padding: 5px;
+  margin-left: 13%;
+  margin-bottom: 8px;
+  box-shadow: 0 0 4px darkblue;
+}
+#calculateBtn{
+  font-weight: bold;
+  color: black;
+  font-size: 1rem;
+  font-family: Times New Roman;
+  margin-left: 32%;
+}
+.input:hover{
+  background-image: linear-gradient(40deg,#87CE,#fff,#87CEEB);
+}
+.input:active{
+  background-image: linear-gradient(50deg,#87CEEB,#fff,#87CE);
+}
+.inputDisplay{
+  background-image: linear-gradient(#87CEEB,#87E);
+  padding: 5px;
+  width: 70%;
+  position: absolute;
+  border-radius: 8px;
+  left: 15%;
+  top: 12%;
+  padding-top: 5px;
+  box-shadow:0 0 10px #87CEEB;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: Segoe UI;
+}
+#answer{
+  font-size: 1.5rem;
+  margin-top: 40%;
+  color: #fff;
+  text-align: center;
+  text-decoration: underline;
+  font-weight: bold;
+  font-family: Times New Roman,Verdana;
+}
+.solutionSteps{
+  background-image: linear-gradient(#87E,#2B88FF);
+  color: #ffd;
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 70%;
+  text-align: center;
+  border-radius: 5px;
+  font-family: Times New Roman,Verdana;
+  font-size: 14px;
+  box-shadow: 0 0 10px #87CEEB;
+}
+#solution{
+  text-decoration: underline;
+}
+#step1,#step2,#step3,#finalStep{
+font-style: italic;  
+}
+.calculatorName:before{
+  content: "";
+  font-weight: 600;
+  font-size: 20px;
+  color: #fff;
+  animation-name: headingtext;
+  animation-duration: 2500ms;
+  animation-iteration-count: infinite;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+@keyframes headingtext{
+  5% {content: "W";}
+  10% {content: "WO";}
+  20% {content: "WOR";}
+  30% {content: "WORK";}
+  40% {content: "WORK C";}
+  50% {content: "WORK CA";}
+  60% {content: "WORK CAL";}
+  70% {content: "WORK CALC";}
+  80% {content: "WORK CALCU";}
+  90% {content: "WORK CALCULA";}
+  100% {content: "WORK CALCULATOR";}
+}
+.calculatorName{
+  font-family: Sans-Serif,Verdana,Tahoma;
+  text-align: center;
+  margin-top: 15px;
+  font-size: 40px;
+}

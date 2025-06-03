@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WORK DONE CALCULATOR </title>
+    <link rel="stylesheet" href="work-done.css" type="text/css">
+</head>
+<body>
+  <div class="container">
+    <div class="calculatorName">
+        <h1></h1>
+    </div>
+        <!-- input display section -->
+        <div class="inputDisplay">
+            <h5 id="displayInput1"></h5>
+            <h5 id="displayInput2"></h5>
+        </div>
+        <!-- answer display here-->
+        <div class="answerDisplay">
+            <h4 id="answer"></h4>
+        </div>
+        <div class="input">
+            <!-- form input  -->
+            <form>
+                <label for="force">Force</label>
+                <input type="number" name="force" id="force"><br>
+                <label for="distance">Distance</label>
+                <input type="number" name="distance" id="distance">
+            </form>
+            <br><input type="button" value="Calculate" id="calculateBtn">
+        </div>       
+    <!-- here are the steps steps of how we get the answer -->
+    <div class="solutionSteps">
+        <h4 id="solution"> solution Steps</h4>
+        <p id="step1"></p>
+        <p id="step2"></p>
+        <p id="step3"></p>
+        <p id="finalStep"></p>
+    </div>
+    </div>
+</body>
+<script src="work-done.js"></script>
+</html>
